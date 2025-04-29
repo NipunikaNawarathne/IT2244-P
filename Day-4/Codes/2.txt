@@ -1,0 +1,100 @@
+1). [nipunika@ChathuraDN ~]$ vi xyz.csv
+
+Jenny,23,IT
+Anne,22,Maths
+John,24,Bio
+Rose,21,IT
+Harry,27,Bio
+Dan,25,Maths
+Collin,26,IT
+Ben,21,HR
+Ivan,29,Bio
+Ema,22,Maths
+
+
+2). [nipunika@ChathuraDN ~]$ wc -l xyz.csv
+
+10 xyz.csv
+
+
+3). [nipunika@ChathuraDN ~]$ cut -d',' -f 2 xyz.csv
+
+23
+22
+24
+21
+27
+25
+26
+21
+29
+22
+
+
+4). [nipunika@ChathuraDN ~]$ awk -F',' '{print $1}' xyz.csv
+
+Jenny
+Anne
+John
+Rose
+Harry
+Dan
+Collin
+Ben
+Ivan
+Ema
+
+
+5). [nipunika@ChathuraDN ~]$ cut -d',' -f 1,3 xyz.csv
+
+Jenny,IT
+Anne,Maths
+John,Bio
+Rose,IT
+Harry,Bio
+Dan,Maths
+Collin,IT
+Ben,HR
+Ivan,Bio
+Ema,Maths
+
+
+6). [nipunika@ChathuraDN ~]$ head -3 xyz.csv
+
+Jenny,23,IT
+Anne,22,Maths
+John,24,Bio
+
+
+7). [nipunika@ChathuraDN ~]$ tail -5 xyz.csv
+
+Dan,25,Maths
+Collin,26,IT
+Ben,21,HR
+Ivan,29,Bio
+Ema,22,Maths
+
+
+8). [nipunika@ChathuraDN ~]$ cut -d',' -f 2 xyz.csv > xyz1.csv
+	[nipunika@ChathuraDN ~]$ more xyz1.csv
+
+23
+22
+24
+21
+27
+25
+26
+21
+29
+22
+
+
+9). [nipunika@ChathuraDN ~]$ head -3 xyz.csv >>rows_xyz.csv
+	[nipunika@ChathuraDN ~]$ more rows_xyz.csv
+
+Jenny,23,IT
+Anne,22,Maths
+John,24,Bio
+
+
