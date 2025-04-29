@@ -97,8 +97,7 @@
 **Sorts the file by Department (alphabetically).**
 
 
-![14 sort by department in asc order](https://github.com/user-attachments/assets/6a5bcb18-c4d3-4e4d-9bc4-
-74785dc175c8)
+![14 sort by department in asc order](https://github.com/user-attachments/assets/e94f3d1e-c566-45ce-9e93-355d04446b80)
 
 ## 15. sort -t',' -k5,5 -k4,4nr program1.csv
 
