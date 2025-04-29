@@ -1,0 +1,54 @@
+1). [nipunika@ChathuraDN ~]$ touch abc.txt
+
+Used in Linux to create an empty file or update the timestamp of an existing file.
+
+
+2). [nipunika@ChathuraDN ~]$ ls -ltr
+
+List files and directories
+-l -> Uses long listing format
+-t -> Sorts files by modification time
+-r -> Reverses the order
+
+total 8
+-rw-r--r-- 1 nipunika nipunika 123 Apr  9 23:35 xyz.csv
+-rwxrwxrwx 1 nipunika nipunika  46 Apr 28 18:50 abc.txt
+
+
+3). [nipunika@ChathuraDN ~]$ vi abc.txt
+
+This opens the file abc.txt in the vi editor(or Vim if Vi is not installed)
+	*If abc.txt exists, it opens the file for editing
+	*If abc.txt does not exist, vi creats a new file with that name
+
+Mine,23,IT
+Anne,22,Maths
+John,24,Bio
+Rose,21,IT
+
+4). [nipunika@ChathuraDN ~]$ more abc.txt
+
+Display the content of abc.txt one screen at a time
+Useful for reading large files without opening them in an editor
+
+Mine,23,IT
+Anne,22,Maths
+John,24,Bio
+Rose,21,IT
+
+5). [nipunika@ChathuraDN ~]$ chmod 777 abc.txt
+	[nipunika@ChathuraDN ~]$ chmod 757 abc.txt
+	[nipunika@ChathuraDN ~]$ chmod 555 abc.txt
+	[nipunika@ChathuraDN ~]$ chmod 444 abc.txt
+	[nipunika@ChathuraDN ~]$ chmod 755 abc.txt
+	[nipunika@ChathuraDN ~]$ chmod 547 abc.txt
+
+Change mode is used to modify file permission in Linux
+
+6). [nipunika@ChathuraDN ~]$ find *.txt
+
+abc.txt
+
+7). [nipunika@ChathuraDN ~]$ find *b*.txt
+
+abc.txt
