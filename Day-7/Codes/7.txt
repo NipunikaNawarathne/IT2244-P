@@ -1,0 +1,28 @@
+1). [nipunika@ChathuraDN ~]$ vi program.sh
+
+echo "Name: "
+read name
+echo "Hi" $name
+
+
+2). [nipunika@ChathuraDN ~]$ ls
+
+abc.tsv  abc.txt  program.sh  rows_xyz.csv  vi  xyz.csv  xyz1.csv
+
+
+
+3). [nipunika@ChathuraDN ~]$ chmod 777 program.sh
+
+
+
+4). [nipunika@ChathuraDN ~]$ ls
+
+abc.tsv  abc.txt  program.sh  rows_xyz.csv  vi  xyz.csv  xyz1.csv
+
+
+
+5). [nipunika@ChathuraDN ~]$ ./program.sh
+
+Name:
+Nipunika Nawarathne
+Hi Nipunika Nawarathne
