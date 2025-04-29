@@ -29,37 +29,38 @@
 
 ## 6. date commands (all use date with format options):
 
-date +%d – Day of the month (e.g., 28)
+* date +%d – Day of the month (e.g., 28)
 
-date +%m – Month as a number (e.g., 04)
+* date +%m – Month as a number (e.g., 04)
 
-date +%y – Last two digits of the year (e.g., 25)
+* date +%y – Last two digits of the year (e.g., 25)
 
-date +%Y – Full year (e.g., 2025)
+* date +%Y – Full year (e.g., 2025)
 
-date +%A – Full weekday name (e.g., Monday)
+* date +%A – Full weekday name (e.g., Monday)
 
-date +%a – Abbreviated weekday name (e.g., Mon)
+* date +%a – Abbreviated weekday name (e.g., Mon)
 
-date +%B – Full month name (e.g., April)
+* date +%B – Full month name (e.g., April)
 
-date +%b – Abbreviated month name (e.g., Apr)
+* date +%b – Abbreviated month name (e.g., Apr)
 
-date +%C – Century (e.g., 20)
+* date +%C – Century (e.g., 20)
 
-date +%c – Full date and time (e.g., Mon Apr 28 21:05:43 2025)
+* date +%c – Full date and time (e.g., Mon Apr 28 21:05:43 2025)
 
-date +%D – Date in MM/DD/YY format (e.g., 04/28/25)
+* date +%D – Date in MM/DD/YY format (e.g., 04/28/25)
 
-date +%M – Minutes (e.g., 05)
+* date +%M – Minutes (e.g., 05)
 
-date +%H – Hour in 24-hour format (e.g., 21)
+* date +%H – Hour in 24-hour format (e.g., 21)
 
-date +%I – Hour in 12-hour format (e.g., 09)
+* date +%I – Hour in 12-hour format (e.g., 09)
 
-date +%S – Seconds (e.g., 11)
+* date +%S – Seconds (e.g., 11)
 
-date +%T – Time in HH:MM:SS format (24-hour) (e.g., 21:06:15)
+* date +%T – Time in HH:MM:SS format (24-hour) (e.g., 21:06:15)
 
-date +"%H:%M:%S" – Same as above, custom format (e.g., 21:07:17)
+* date +"%H:%M:%S" – Same as above, custom format (e.g., 21:07:17)
+
 ![6 date](https://github.com/user-attachments/assets/3110208c-31b4-4e78-b692-00dd476cd6a1)
