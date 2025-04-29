@@ -1,0 +1,190 @@
+Q1. Get the student name and 3 subject marks from the user and calculate the total marks and the average?
+
+1). [nipunika@ChathuraDN ~]$ vi Q1.sh
+
+echo "Enter your name: "
+read name
+echo "Enter marks for subject 1: "
+read sub1
+echo "Enter marks for subject 2: "
+read sub2
+echo "Enter marks for subject 3: "
+read sub3
+
+tot=$(($sub1+$sub2+$sub3))
+avg=$(($tot/3))
+
+echo "Total: "$tot
+echo "Average: "$avg
+
+2). [nipunika@ChathuraDN ~]$ chmod 777 Q1.sh
+
+3). [nipunika@ChathuraDN ~]$ ./Q1.sh
+Enter your name:
+Harshan
+Enter marks for subject 1:
+89
+Enter marks for subject 2:
+76
+Enter marks for subject 3:
+90
+Total: 255
+Average: 85
+
+
+
+Q2. Create calculator with arithmetic operators
+
+1). [nipunika@ChathuraDN ~]$ vi Q2.sh
+
+echo "Enter the first number: "
+read num1
+echo "Enter the second number: "
+read num2
+
+sum=$(($num1+$num2))
+sub=$(($num1-$num2))
+mul=$(($num1*$num2))
+div=$(($num1/$num2))
+
+echo "Summation: "$sum
+echo "Subtraction: "$sub
+echo "Multiplication: "$mul
+echo "Division: "$div
+
+2). [nipunika@ChathuraDN ~]$ chmod 777 Q2.sh
+
+3). [nipunika@ChathuraDN ~]$ ./Q2.sh
+Enter the first number:
+78
+Enter the second number:
+16
+Summation: 94
+Subtraction: 62
+Multiplication: 1248
+Division: 4
+
+
+
+
+Q3. Get the days based on the user input.
+
+1). [nipunika@ChathuraDN ~]$ vi Q3.sh
+
+echo "Enter the number: "
+read number
+
+case $number in
+1)echo "Monday";;
+2)echo "Tuesday";;
+3)echo "Wednesday";;
+4)echo "Thursday";;
+5)echo "Friday";;
+6)echo "Saturday";;
+7)echo "Sunday";;
+*)echo "Invalid Number";;
+esac
+
+2). [nipunika@ChathuraDN ~]$ chmod 777 Q3.sh
+
+3). [nipunika@ChathuraDN ~]$ ./Q3.sh
+Enter the number:
+5
+Friday
+[nipunika@ChathuraDN ~]$ ./Q3.sh
+Enter the number:
+9
+Invalid Number
+
+
+
+
+Q4. Verify whether your username is correct or not. (Use your name as a input)
+
+1). [nipunika@ChathuraDN ~]$ vi Q4.sh
+
+echo "Enter your username: "
+read u_name
+username="Nipunika"
+
+if [ "$username"=="$u_name" ]; then
+  echo "Username is correct"
+else
+  echo "Incorrect username"
+fi
+
+2). [nipunika@ChathuraDN ~]$ chmod 777 Q4.sh
+
+3). [nipunika@ChathuraDN ~]$ ./Q4.sh
+Enter your username:
+jndue
+Incorrect username
+
+4). [nipunika@ChathuraDN ~]$ ./Q4.sh
+Enter your username:
+Nipunika
+Username is correct
+
+
+
+
+
+
+Q5. Enter two numbers: 
+	7	5
+	7 is greater than 5
+	
+	Enter two numbers: 
+	1	9
+	1 is less than 9
+	
+1). [nipunika@ChathuraDN ~]$ vi Q5.sh
+
+echo "Enter two numbers: "
+read num1
+read num2
+
+if [ $num1 > $num2 ]; then
+  echo $num1 "is greater than" $num2
+else
+  echo $num1 "is less than" $num2
+fi
+
+2). [nipunika@ChathuraDN ~]$ chmod 777 Q5.sh
+
+3). [nipunika@ChathuraDN ~]$ ./Q5.sh
+Enter two numbers:
+5
+1
+5 is greater than 1
+
+
+
+
+
+Q6. Create simple calculator using "expr" command same as the Question 3.
+
+1). [nipunika@ChathuraDN ~]$ vi Q6.sh
+
+echo "Enter the first number: "
+read num1
+echo "Enter the second number: "
+read num2
+
+sum=$(expr $num1 + $num2)
+
+echo "Summation: "$sum
+
+2). [nipunika@ChathuraDN ~]$ chmod 777 Q6.sh
+
+3). [nipunika@ChathuraDN ~]$ ./Q6.sh
+Enter the first number:
+23
+Enter the second number:
+54
+Summation: 77
+
+Important Notes:
+There must be spaces between numbers and + when using expr.
+Example: expr 5 + 7 → Correct
+Example: expr 5+7 → Wrong
