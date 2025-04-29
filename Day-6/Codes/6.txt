@@ -1,0 +1,107 @@
+1). [nipunika@ChathuraDN ~]$ cal
+
+     April 2025
+Su Mo Tu We Th Fr Sa
+       1  2  3  4  5
+ 6  7  8  9 10 11 12
+13 14 15 16 17 18 19
+20 21 22 23 24 25 26
+27 28 29 30
+
+
+2). [nipunika@ChathuraDN ~]$ pwd
+
+/home/nipunika
+
+
+3). [nipunika@ChathuraDN ~]$ ls
+
+abc.tsv  abc.txt  rows_xyz.csv  vi  xyz.csv  xyz1.csv
+
+
+4). [nipunika@ChathuraDN ~]$ ls -a
+
+.   .bash_history  .bash_profile  abc.tsv  rows_xyz.csv  xyz.csv
+..  .bash_logout   .bashrc        abc.txt  vi            xyz1.csv
+
+
+5). [nipunika@ChathuraDN ~]$ ls -ltr
+
+total 24
+-rw-r--r-- 1 nipunika nipunika   1 Apr 28 19:01 vi
+-r-xr--rwx 1 nipunika nipunika  48 Apr 28 19:30 abc.txt
+-rw-r--r-- 1 nipunika nipunika 123 Apr 28 19:49 xyz.csv
+-rw-r--r-- 1 nipunika nipunika  30 Apr 28 20:01 xyz1.csv
+-rw-r--r-- 1 nipunika nipunika  76 Apr 28 20:09 rows_xyz.csv
+-rw-r--r-- 1 nipunika nipunika 132 Apr 28 20:41 abc.tsv
+
+
+
+6). [nipunika@ChathuraDN ~]$ date +%d
+
+28
+
+	[nipunika@ChathuraDN ~]$ date +%m
+
+04
+
+	[nipunika@ChathuraDN ~]$ date +%y
+
+25
+
+	[nipunika@ChathuraDN ~]$ date +%A
+
+Monday
+
+	[nipunika@ChathuraDN ~]$ date +%a
+
+Mon
+
+	[nipunika@ChathuraDN ~]$ date +%B
+
+April
+
+	[nipunika@ChathuraDN ~]$ date +%b
+
+Apr
+
+	[nipunika@ChathuraDN ~]$ date +%C
+
+20
+
+	[nipunika@ChathuraDN ~]$ date +%c
+
+Mon Apr 28 21:05:43 2025
+
+	[nipunika@ChathuraDN ~]$ date +%D
+
+04/28/25
+
+	[nipunika@ChathuraDN ~]$ date +%Y
+
+2025
+
+	[nipunika@ChathuraDN ~]$ date +%M
+
+05
+
+	[nipunika@ChathuraDN ~]$ date +%H
+
+21
+
+	[nipunika@ChathuraDN ~]$ date +%I
+
+09
+
+	[nipunika@ChathuraDN ~]$ date +%S
+
+11
+
+	[nipunika@ChathuraDN ~]$ date +%T
+
+21:06:15
+
+	[nipunika@ChathuraDN ~]$ date +"%H:%M:%S"
+
+21:07:17
+
