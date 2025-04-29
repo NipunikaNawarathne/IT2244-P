@@ -14,6 +14,6 @@
 
 ![5  chmod](https://github.com/user-attachments/assets/6a8e7b95-293b-4afd-b517-44b40dae595a)
 
-## 5. find *.txt and find ***b***.txt
+## 5. find *.txt
 
 ![6,7 find](https://github.com/user-attachments/assets/806e8bdd-4f1a-4da8-9559-56af3acd4f36)
