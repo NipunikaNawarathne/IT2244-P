@@ -15,10 +15,28 @@
 
 ## Q2: For Loop Syntax in Shell Script
 
-*Iterates over a list of values.**
+**Iterates over a list of values.**
 
 **variable takes each value in the list one by one.**
 
 ![Q2 1](https://github.com/user-attachments/assets/f2c8726a-0385-4a61-b4a9-806ea56034e0)
 
 ![Q2 2](https://github.com/user-attachments/assets/45fa4a9c-8c54-4aa2-9203-5b5629a60494)
+
+
+
+## Q3: While Loop Syntax in Shell Script
+
+**Executes as long as the condition inside [ ] is true.**
+
+**Use -le, -lt, etc., for numeric comparisons.**
+
+![Q3 1](https://github.com/user-attachments/assets/90ef429b-b206-476b-95e1-7ae085bf8902)
+
+![Q3 2](https://github.com/user-attachments/assets/0c8705b2-09fe-4894-8add-bd233179b714)
+
+
+
+
+
+
