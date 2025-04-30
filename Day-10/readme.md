@@ -37,6 +37,43 @@
 
 
 
+## Q4: Nested For Loop Syntax in Shell Script
+
+**Uses C-style loop syntax: ((init; condition; increment))**
+
+**Useful for printing patterns or working with rows and columns.**
+
+**1**
+
+![Q4 1](https://github.com/user-attachments/assets/07473712-17b3-4977-9c68-ad4e7547d42e)
+
+![Q4 2](https://github.com/user-attachments/assets/8d3e638e-6945-4d3d-b805-e0cdf5c64ac5)
+
+**2**
+
+![Q5 1](https://github.com/user-attachments/assets/11ca06e8-e749-4079-a2f1-48840aeb9615)
+
+![Q5 2](https://github.com/user-attachments/assets/571ccb81-b422-44c1-b2bf-fa35a2c332ef)
+
+**3**
+
+![Q6 1](https://github.com/user-attachments/assets/973c5919-5279-4cce-8e76-11b06901f434)
+
+![Q6 2](https://github.com/user-attachments/assets/29cd9eef-54e8-435d-9050-047a0423ff79)
+
+**4**
+
+![Q7 1](https://github.com/user-attachments/assets/74257490-1faa-4ddf-bf00-33c8ed67c1a4)
+
+![Q7 2](https://github.com/user-attachments/assets/e3027fa2-3c83-4932-92b3-c49d6a8993e3)
+
+**5**
+
+![Q8 1](https://github.com/user-attachments/assets/22a09235-1356-4af4-aa52-7814c45cc294)
+
+![Q8 2](https://github.com/user-attachments/assets/17143c9c-63b4-4765-955d-0857e0c6a113)
+
+
 
 
 
