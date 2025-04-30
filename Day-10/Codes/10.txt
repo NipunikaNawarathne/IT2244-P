@@ -1,0 +1,378 @@
+Q1). Write a code for small astrology based on your life
+	 path number for that get date of birth from user then
+	 calculate life path number. (use switch case)
+	 Example:-
+		Calculation for life path number: //date is 23
+			a=date%10	3
+			b=date/10	2
+			c=a+b	5
+		if life path number:
+			1:Lucky
+			2:Carefuly do your work
+			3:Storger
+			4:Happy
+			5:Can get help
+			6:Doubt
+			7:Sad
+			8:Like
+			9:Courage
+			
+
+1. [nipunika@ChathuraDN ~]$ vi LifePathNumber.sh
+
+echo "Enter your birth date: "
+read bdate
+
+a=bdate%10
+b=bdate/10
+c=$(($a+$b))
+
+case $c in
+1)echo "Lucky";;
+2)echo "Carefuly do your work";;
+3)echo "Storger";;
+4)echo "Happy";;
+5)echo "Can get help";;
+6)echo "Doubt";;
+7)echo "Sad";;
+8)echo "Like";;
+9)echo "Courage";;
+*)
+  x=c%10
+  y=c/10
+  z=$(($x+$y))
+
+  case $z in
+  1)echo "Lucky";;
+  2)echo "Carefuly do your work";;
+  3)echo "Storger";;
+  4)echo "Happy";;
+  5)echo "Can get help";;
+  6)echo "Doubt";;
+  7)echo "Sad";;
+  8)echo "Like";;
+  9)echo "Courage";;
+  *)echo "Invalid number. Please Try again!";;
+  esac
+;;
+esac
+
+2. [nipunika@ChathuraDN ~]$ chmod 777 LifePathNumber.sh
+
+3. [nipunika@ChathuraDN ~]$ ./LifePathNumber.sh
+
+Enter your birth date:
+24
+Doubt
+
+4. [nipunika@ChathuraDN ~]$ ./LifePathNumber.sh
+
+Enter your birth date:
+29
+Carefuly do your work
+
+5. [nipunika@ChathuraDN ~]$ ./LifePathNumber.sh
+
+Enter your birth date:
+10
+Lucky
+
+
+
+Q2). Give list of numbers then calculate the 
+	 summation and multiplication using for loop.
+	 Ex:-
+		1 2 3 4 5
+			Summation = 15
+			multiplication = 120
+
+	 //syntax for FOR LOOP
+	 for variable in list
+		do
+			commands
+		done
+		
+1. [nipunika@ChathuraDN ~]$ vi LifePathNumber.sh
+
+echo "Enter number list: "
+read -a numbers
+
+sum=0
+mul=1
+
+for num in ${numbers[@]}; do
+  sum=$(($sum+$num))
+  mul=$(($mul*$num))
+done
+
+echo "Summation: "$sum
+echo "Multiplication: "$mul
+
+2. [nipunika@ChathuraDN ~]$ vi SumOfListOfNumbers.sh
+
+3. [nipunika@ChathuraDN ~]$ chmod 777 SumOfListOfNumbers.sh
+
+4. [nipunika@ChathuraDN ~]$ ./SumOfListOfNumbers.sh
+
+Enter number list:
+2 5 3 7 1 8 7
+Summation: 33
+Multiplication: 11760
+
+
+
+
+Q3). Print the integers from 1 to 10 using while loop.
+
+	 //syntax
+	 while [ condition ] //while[variable_name -le 10]
+	 do
+		 commands
+	 done
+
+1. [nipunika@ChathuraDN ~]$ vi PrintUsingWhile.sh
+
+i=1
+
+while [ $i -le 10 ]
+do
+  echo $i
+  i=$(($i+1))
+done
+
+2. [nipunika@ChathuraDN ~]$ chmod 777 PrintUsingWhile.sh
+
+3. [nipunika@ChathuraDN ~]$ ./PrintUsingWhile.sh
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+
+
+Q4). Print below pattern using nested loop.
+
+	 //suntax for nested for loop
+
+	 for ((variable=0; variable<=input;variable++))
+	 do
+		 for ((variable=0; variable<=input;variable++))
+		 do
+			 commands
+		 done
+	 done
+
+columns=7	rows = 7
+
+i)
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * * * *
+* * * * * * *
+
+ii)
+* * * * * * *
+* * * * * *
+* * * * * 
+* * * *
+* * *
+* *
+*
+
+iii)
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+6 6 6 6 6 6
+
+iv)
+1
+1 2 
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+
+
+v)
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+
+
+
+
+
+i).
+
+1. [nipunika@ChathuraDN ~]$ vi NestedForLoop.sh
+
+cols=7
+rows=7
+
+for((i=1; i<=rows; i++))
+do
+
+  for((j=1; j<=i; j++))
+  do
+    echo -n "* "
+  done
+
+  echo ""
+
+done
+
+2. [nipunika@ChathuraDN ~]$ chmod 777 NestedForLoop.sh
+
+3. [nipunika@ChathuraDN ~]$ ./NestedForLoop.sh
+
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * * * *
+* * * * * * *
+
+
+
+ii).
+
+1. [nipunika@ChathuraDN ~]$ vi NestedForLoop1.sh
+
+cols=7
+rows=7
+
+for((i=1; i<=rows; i++))
+do
+  for((j=rows; j>=i; j--))
+  do
+    echo -n "* "
+  done
+  echo ""
+done
+
+2. [nipunika@ChathuraDN ~]$ chmod 777 NestedForLoop1.sh
+
+3. [nipunika@ChathuraDN ~]$ ./NestedForLoop1.sh
+
+* * * * * * *
+* * * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+
+
+
+iii). 
+
+1. [nipunika@ChathuraDN ~]$ vi NestedForLoop2.sh
+
+cols=7
+rows=7
+
+for((i=1; i<=rows; i++))
+do
+  for((j=1; j<=i; j++))
+  do
+    echo -n $i
+  done
+  echo ""
+done
+
+2. [nipunika@ChathuraDN ~]$ chmod 777 NestedForLoop2.sh
+
+3. [nipunika@ChathuraDN ~]$ ./NestedForLoop2.sh
+
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+6 6 6 6 6 6
+7 7 7 7 7 7 7
+
+
+
+iv). 
+
+1. [nipunika@ChathuraDN ~]$ vi NestedForLoop3.sh
+
+cols=7
+rows=7
+
+for((i=1; i<=rows; i++))
+do
+  for((j=1; j<=i; j++))
+  do
+    echo -n "$j "
+  done
+  echo ""
+done
+
+2. [nipunika@ChathuraDN ~]$ chmod 777 NestedForLoop3.sh
+
+3. [nipunika@ChathuraDN ~]$ ./NestedForLoop3.sh
+
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+1 2 3 4 5 6 7
+
+
+
+v).
+
+1. [nipunika@ChathuraDN ~]$ vi NestedForLoop4.sh
+
+cols=7
+rows=7
+
+for((i=1; i<=rows; i++))
+do
+
+  for((j=1; j<=rows-i; j++))
+  do
+     echo -n " "
+  done
+
+  for((k=1; k<=i; k++))
+  do
+     echo -n "* "
+  done
+
+  echo ""
+
+done
+
+2. [nipunika@ChathuraDN ~]$ chmod 777 NestedForLoop4.sh
+
+3. [nipunika@ChathuraDN ~]$ ./NestedForLoop4.sh
+
+      *
+     * *
+    * * *
+   * * * *
+  * * * * *
+ * * * * * *
+* * * * * * *
