@@ -1,0 +1,223 @@
+Q1). Fibonacci series
+
+1. [nipunika@ChathuraDN ~]$ vi FibonacciSeries.sh
+
+echo "Enter number for Fibonacci Series: "
+read fibonacciNum
+
+a=0
+b=1
+
+for((i=1; i<=fibonacciNum; i++))
+do
+  echo "$a "
+
+  c=$(($a+$b))
+  a=$b
+  b=$c
+done
+
+2. [nipunika@ChathuraDN ~]$ chmod 777 FibonacciSeries.sh
+
+3. [nipunika@ChathuraDN ~]$ ./FibonacciSeries.sh
+
+Enter number for Fibonacci Series:
+0
+
+4. [nipunika@ChathuraDN ~]$ ./FibonacciSeries.sh
+Enter number for Fibonacci Series:
+1
+0
+
+5. [nipunika@ChathuraDN ~]$ ./FibonacciSeries.sh
+Enter number for Fibonacci Series:
+5
+0
+1
+1
+2
+3
+
+
+
+Q2). Factorial
+
+1. [nipunika@ChathuraDN ~]$ vi Factorial.sh
+
+echo "Enter a number: "
+read number
+
+fact=1
+
+for((i=2; i<=number; i++))
+do
+  fact=$(($fact*$i))
+done
+
+echo "Factorial: "$fact
+
+2. [nipunika@ChathuraDN ~]$ chmod 777 Factorial.sh
+
+3. [nipunika@ChathuraDN ~]$ ./Factorial.sh
+
+Enter a number:
+5
+Factorial: 120
+
+
+
+Q3). Multiples of 3 between 1 and 50
+
+	 3
+	 6
+	 9
+	 12
+	 15
+	 18
+	 21
+	 24
+	 27
+	 30
+	 33
+	 36
+	 39
+	 42
+	 45
+	 48
+	 
+
+1. [nipunika@ChathuraDN ~]$ vi MultiplesOfThree.sh
+
+i=3
+while [ $i -le 50 ]
+do
+  echo "Multiples of 3: "$i
+  i=$(($i+3))
+done
+
+2. [nipunika@ChathuraDN ~]$ chmod 777 MultiplesOfThree.sh
+
+3. [nipunika@ChathuraDN ~]$ ./MultiplesOfThree.sh
+
+Multiples of 3: 3
+Multiples of 3: 6
+Multiples of 3: 9
+Multiples of 3: 12
+Multiples of 3: 15
+Multiples of 3: 18
+Multiples of 3: 21
+Multiples of 3: 24
+Multiples of 3: 27
+Multiples of 3: 30
+Multiples of 3: 33
+Multiples of 3: 36
+Multiples of 3: 39
+Multiples of 3: 42
+Multiples of 3: 45
+Multiples of 3: 48
+
+
+
+Q4). Print multiplication table using for loop
+	 1 x 2 = 2
+	 2 x 2 = 4
+	 ....
+
+1. [nipunika@ChathuraDN ~]$ vi MultiplicationTable.sh
+
+echo "Enter a number: "
+read number
+
+for((i=1; i<=12; i++))
+do
+  mul=$(($i*$number))
+  echo "$i x $number = "$mul
+done
+
+2. [nipunika@ChathuraDN ~]$ chmod 777 MultiplicationTable.sh
+
+3. [nipunika@ChathuraDN ~]$ ./MultiplicationTable.sh
+
+Enter a number:
+4
+1 x 4 = 4
+2 x 4 = 8
+3 x 4 = 12
+4 x 4 = 16
+5 x 4 = 20
+6 x 4 = 24
+7 x 4 = 28
+8 x 4 = 32
+9 x 4 = 36
+10 x 4 = 40
+11 x 4 = 44
+12 x 4 = 48
+
+
+
+
+
+
+
+Q5). 
+
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+
+1. [nipunika@ChathuraDN ~]$ vi StarPattern.sh
+
+rows=5
+
+for((i=1; i<=rows; i++))
+do
+  for((j=1; j<=rows-i; j++))
+  do
+     echo -n " "
+  done
+
+  for((k=1; k<=i; k++))
+  do
+    echo -n "* "
+  done
+
+  echo ""
+done
+
+for((i=rows-1; i>=1; i--))
+do
+  for((j=1; j<=rows-i; j++))
+  do
+    echo -n " "
+  done
+
+  for((k=i; k>=1; k--))
+  do
+    echo -n "* "
+  done
+
+  echo ""
+done
+
+2. [nipunika@ChathuraDN ~]$ chmod 777 StarPattern.sh
+
+3. [nipunika@ChathuraDN ~]$ ./StarPattern.sh
+
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+ * * * *
+  * * *
+   * *
+    *
+
+
+
