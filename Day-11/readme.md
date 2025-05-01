@@ -1,6 +1,7 @@
 ## Q1: Fibonacci Series
 
 **vi FibonacciSeries.sh**
+
 Opens a new or existing file named FibonacciSeries.sh in the Vi editor to write the script.
 
 **chmod 777 FibonacciSeries.sh**
