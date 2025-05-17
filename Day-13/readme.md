@@ -4,6 +4,10 @@
 
 ```
 vi 1PrintAStatement.c       # Open the file in vi editor
+```
+
+
+```
 gcc 1PrintAStatement.c -o 1PrintAStatement  # Compile the program
 ./1PrintAStatement          # Run the executable
 ```
@@ -16,6 +20,10 @@ gcc 1PrintAStatement.c -o 1PrintAStatement  # Compile the program
 
 ```
 vi 2Variables.c
+```
+
+
+```
 gcc 2Variables.c -o 2Variables
 ./2Variables
 ```
@@ -28,6 +36,10 @@ gcc 2Variables.c -o 2Variables
 
 ```
 vi 3AssignValueForSameVaria.c
+```
+
+
+```
 gcc 3AssignValueForSameVaria.c -o 3AssignValueForSameVaria
 ./3AssignValueForSameVaria
 ```
@@ -40,6 +52,10 @@ gcc 3AssignValueForSameVaria.c -o 3AssignValueForSameVaria
 
 ```
 vi 4AssigningVariable.c
+```
+
+
+```
 gcc 4AssigningVariable.c -o 4AssigningVariable
 ./4AssigningVariable
 ```
@@ -52,6 +68,10 @@ gcc 4AssigningVariable.c -o 4AssigningVariable
 
 ```
 vi 5MultipleVariInSameLine.c
+```
+
+
+```
 gcc 5MultipleVariInSameLine.c -o 5MultipleVariInSameLine
 ./5MultipleVariInSameLine
 ```
@@ -66,6 +86,10 @@ gcc 5MultipleVariInSameLine.c -o 5MultipleVariInSameLine
 
 ```
 vi 6DataTypes.c
+```
+
+
+```
 gcc 6DataTypes.c -o 6DataTypes
 ./6DataTypes
 ```
@@ -78,6 +102,10 @@ gcc 6DataTypes.c -o 6DataTypes
 
 ```
 vi 7Input.c
+```
+
+
+```
 gcc 7Input.c -o 7Input
 ./7Input
 ```
@@ -90,6 +118,10 @@ gcc 7Input.c -o 7Input
 
 ```
 vi 8MultipleInputs.c
+```
+
+
+```
 gcc 8MultipleInputs.c -o 8MultipleInputs
 ./8MultipleInputs
 ```
@@ -102,6 +134,10 @@ gcc 8MultipleInputs.c -o 8MultipleInputs
 
 ```
 vi 9ArithmaticOperators.c
+```
+
+
+```
 gcc 9ArithmaticOperators.c -o 9ArithmaticOperators
 ./9ArithmaticOperators
 ```
