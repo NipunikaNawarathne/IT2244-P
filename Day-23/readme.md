@@ -21,13 +21,10 @@ Triangle => T
 Square => S  
 Rectangle => R  
 
-Enter your choice: C
-
-Circle Area Calculation
-
-Enter the radius: 20.9
+Enter your choice: C  
+Circle Area Calculation  
+Enter the radius: 20.9  
 Area is: 1371.58
-
 
 ![2 1 Exercise CircleRectangleTriangleSquare](https://github.com/user-attachments/assets/a39d32ab-dc60-411d-9b92-5a479738d97f)
 
