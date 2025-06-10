@@ -4,10 +4,10 @@
 
 ##  Exercise (02)
 
- step01: parent process get input from user\n
- step02: sending these inputs to child process
- step03: child process getting these inputs from parent and doing calculation
- step04: step the calculated values to parent
+ step01: parent process get input from user  
+ step02: sending these inputs to child process  
+ step03: child process getting these inputs from parent and doing calculation  
+ step04: step the calculated values to parent  
  step05: parent print the outputs
  
  [circle,rectangle,triangle,square]
@@ -16,10 +16,10 @@
 
 Area calculation program
 
-Circle => C
-Triangle => T
-Square => S
-Rectangle => R
+Circle => C  
+Triangle => T  
+Square => S  
+Rectangle => R  
 
 Enter your choice: C
 
