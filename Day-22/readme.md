@@ -6,18 +6,14 @@
 
 **1. Get three input from user (//parent process)**
 
- name:
- 
- reg no: 
- 
- age: 
+ name:  
+ reg no:  
+ age:
 
 **2. Print the output from the child(//child process)**
 
- name: abc
- 
- reg no: 2022/ict/01
- 
+ name: abc  
+ reg no: 2022/ict/01  
  age: 25
 
 ![2 Pipe Question](https://github.com/user-attachments/assets/ee61e87b-62e0-4483-9a0f-d09ae3d07ea1)
