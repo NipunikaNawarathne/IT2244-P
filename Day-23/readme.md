@@ -8,11 +8,10 @@
  step02: sending these inputs to child process  
  step03: child process getting these inputs from parent and doing calculation  
  step04: step the calculated values to parent  
- step05: parent print the outputs
- 
+ step05: parent print the outputs  
  [circle,rectangle,triangle,square]
   
-// Expected Output
+**Expected Output**
 
 Area calculation program
 
